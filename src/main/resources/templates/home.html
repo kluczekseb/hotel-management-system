@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <th:block th:include="fragments/bootstrapFiles :: headerFiles"></th:block>
+    <title>Strona główna!</title>
+</head>
+<body>
+    <header th:replace="fragments/header :: header(home)"></header>
+    <h1>Witaj!</h1>
+
+    <th:block th:include="fragments/bootstrapFiles :: scripts"></th:block>
+</body>
+</html>
